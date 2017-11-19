@@ -13,4 +13,7 @@ export class HeaderComponent implements OnInit {
   constructor() {}
   ngOnInit() {
   }
+  changeTitle(){
+    this.title += ' !'
+  }
 }
