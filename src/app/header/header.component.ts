@@ -9,12 +9,12 @@ export class HeaderComponent implements OnInit {
   num:number = 1;
   title: string = "記載著 Will 在網路世界的學習心得與技術分享";
   titleURL: string = "http://blog.miniasp.com/";
-  titleSize:number = 32;
+  ishighlight:boolean = false;
   constructor() {}
   ngOnInit() {
   }
   changeTitle(){
     this.title += ' !';
-    this.titleSize ++;
+    this.ishighlight = !this.ishighlight;
   }
 }
