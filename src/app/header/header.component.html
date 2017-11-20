@@ -35,8 +35,11 @@
         <img src="/assets/images/logo.png" class="pull-left logo" alt="The Will Will Web" [attr.data-num]="num" (click)="changeTitle()">
 
         <div class="pull-left">
-          <h1>
+          <!-- <h1>
             <a [href]="titleURL">The Will Will Web</a>
+          </h1> -->
+          <h1>
+            <a [href]="titleURL" [ngStyle]="{'font-size': titleSize + 'px'}">The Will Will Web</a>
           </h1>
           <h3>{{title}}</h3>
         </div>
