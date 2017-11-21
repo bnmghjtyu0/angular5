@@ -9,9 +9,7 @@ import { DataService } from "./data.service";
 export class AppComponent {
   title = "app";
   searchText = "";
-  articles;
   constructor(private datasvc: DataService) {
-    this.articles = datasvc.articles;
   }
   changeSearchText(value) {
     this.searchText = value;
